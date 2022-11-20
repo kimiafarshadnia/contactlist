@@ -1,0 +1,10 @@
+.contact {
+  display: flex;
+  color: black;
+  text-decoration: none;
+  margin: 1rem 0;
+}
+
+.contact:hover {
+  color: black;
+}

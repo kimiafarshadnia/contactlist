@@ -1,0 +1,94 @@
+.modal {
+  height: 100vh;
+  background-color: #f2f2f2;
+  box-shadow: rgb(0, 0, 0, 0.35) 0 5px 15px;
+  border: none;
+  border-radius: 10px;
+  position: fixed;
+  left: 0;
+  top: 2%;
+  right: 0;
+  bottom: 0;
+  margin: 0.25rem;
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1.3rem;
+}
+
+.headerForm button {
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff00;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactForm input {
+  padding: 7px 7px;
+  border: none;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+.contactForm input[type="radio"] {
+  cursor: pointer;
+}
+
+.categori {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.eachCategori {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  font-size: 14px;
+}
+
+.imgContacts {
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.avatar {
+  width: 7.5rem;
+  height: 7.5rem;
+  color: #94a3b8;
+}
+
+.BoxInputs {
+  width: 100%;
+  background: #ffff;
+  margin: 1rem 0;
+}
+.inputs {
+  width: 100%;
+  padding: 0 0.8rem;
+}

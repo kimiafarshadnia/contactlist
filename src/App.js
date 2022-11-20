@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from "react-router-dom";
+import Layout from "./Layout/Layout";
+import InfoContact from "./components/InfoContact/InfoContact";
+import Contacts from "./Pages/Contacts";
+import Keypad from "./Pages/Keypad";
+import Voicemail from "./Pages/Voicemail";
+import EditContact from "./components/EditContact/EditContact";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Switch>
+        <Route path="/edit/:id" component={EditContact} />
+        <Route path="/user/:id" component={InfoContact} />
+        <Route path="/" exact component={Contacts} />
+        <Route path="/keypad" component={Keypad} />
+        <Route path="/voicemail" component={Voicemail} />
+      </Switch>
+    </Layout>
   );
 }
 

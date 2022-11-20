@@ -1,0 +1,98 @@
+.contactInfo {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header button {
+  border: none;
+  color: #2563eb;
+  background-color: #ffffff00;
+}
+.imgContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+}
+
+.boxName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.boxName .categori {
+  font-size: 12px;
+  color: #b9b9b9;
+  margin-top: 0.5rem;
+}
+
+.nameContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.lastname {
+  font-weight: 700;
+  margin-left: 0.3rem;
+}
+
+.operations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.operation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  color: #2563eb;
+  width: 3.8rem;
+  height: 3.5rem;
+  border-radius: 10px;
+}
+
+.operation p {
+  font-size: 12px;
+  margin-top: 0.4rem;
+}
+
+.disable {
+  color: #e2e8f0;
+}
+
+.box {
+  background: #ffff;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.phoneBox {
+  margin-bottom: 0.5rem;
+}
+
+.btnDelete {
+  padding: 0.7rem;
+  color: red;
+  border: none;
+}
