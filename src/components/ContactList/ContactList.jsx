@@ -5,10 +5,13 @@ import getContacts from "../../services/getContactsService";
 import { useEffect, useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import { FaMicrophone } from "react-icons/fa";
+import ListingWithThumbnail from "../ListingWithThumbnail";
+
 const ContactList = () => {
   const [contacts, setContacts] = useState(null);
   const [allContacts, setAllContacts] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
+
   useEffect(() => {
     const fetchContacts = async () => {
       const { data } = await getContacts();
@@ -57,7 +60,9 @@ const ContactList = () => {
           return <Contact contact={contact} key={contact.id} />;
         })
       ) : (
-        <p>LoADING..</p>
+        <div>
+          <ListingWithThumbnail/>
+        </div>
       )}
     </>
   );
