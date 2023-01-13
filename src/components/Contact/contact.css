@@ -8,3 +8,15 @@
 .contact:hover {
   color: black;
 }
+
+/* style for each contact in list */
+.eachContact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameContct{
+  display: flex;
+  align-items: center;
+}
