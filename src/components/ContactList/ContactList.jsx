@@ -5,7 +5,7 @@ import getContacts from "../../services/getContactsService";
 import { useEffect, useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import { FaMicrophone } from "react-icons/fa";
-import ListingWithThumbnail from "../ListingWithThumbnail";
+import BulletList from "../BulletList";
 
 const ContactList = () => {
   const [contacts, setContacts] = useState(null);
@@ -61,7 +61,7 @@ const ContactList = () => {
         })
       ) : (
         <div>
-          <ListingWithThumbnail/>
+          <BulletList/>
         </div>
       )}
     </>
