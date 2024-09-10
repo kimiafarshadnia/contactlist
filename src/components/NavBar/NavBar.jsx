@@ -1,29 +1,28 @@
 import { NavLink, withRouter } from "react-router-dom";
-// import { BsFillStarFill } from "react-icons/bs";
-// import { IoMdContact } from "react-icons/io";
 import "./NavBar.css";
+
 const items = [
   { name: "Favorites", to: "/favorites" },
   { name: "Recents", to: "/recents" },
-  { name: "Contcats", to: "/", exact: true },
+  { name: "Contacts", to: "/", exact: true },
   { name: "Keypad", to: "/keypad" },
   { name: "Voicemail", to: "/voicemail" },
 ];
+
 const NavBar = ({ location }) => {
   return (
     <nav>
       <ul>
-        {items.map((items) => {
+        {items.map((item, index) => {
           return (
-            <div className="linkOfNav">
-              {/* <IoMdContact  /> */}
-              <li key={items.to}>
+            <div className="linkOfNav" key={index}> {/* Add key here */}
+              <li>
                 <NavLink
-                  to={items.to}
+                  to={item.to}
                   activeClassName="activeLink"
-                  exact={items.exact || false}
+                  exact={item.exact || false}
                 >
-                  {items.name}
+                  {item.name}
                 </NavLink>
               </li>
             </div>

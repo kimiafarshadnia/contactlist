@@ -4,6 +4,7 @@ import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
 import { HiMail } from "react-icons/hi";
 import { Link } from "react-router-dom";
+
 const InfoContact = ({ location }) => {
   const { contact } = location.state;
   return (
@@ -69,13 +70,8 @@ const InfoContact = ({ location }) => {
       </div>
 
       <div className="box">
-        <p style={{ marginBottom: "0.5rem" }}>birthday</p>
-        <p style={{ color: "#2563eb" }}>{contact.birthday}</p>
-      </div>
-
-      <div className="box">
-        <p style={{ marginBottom: "0.5rem" }}>mail</p>
-        <p style={{ color: "#2563eb" }}>{contact.birthday}</p>
+        <p style={{ marginBottom: "0.5rem" }}>email</p>
+        <p style={{ color: "#2563eb" }}>{contact.email}</p> {/* Display the email */}
       </div>
     </div>
   );
